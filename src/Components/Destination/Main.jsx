@@ -22,10 +22,10 @@ const Main = () => {
                     </div>
                     <div className='flex items-center justify-between w-[503px] h-[79px] my-10'>
                         <div>
-                            <button className='py-4 px-5 text-xl text-white font-medium bg-[#F1A501] rounded-2xl'>Find out more</button>
+                            <button className='py-4 px-5 text-xl text-white font-medium active:bg-[#f1a50170]  bg-[#F1A501] rounded-2xl'>Find out more</button>
                         </div>
                         <div className='flex gap-6 items-center'>
-                            <button className='p-5 text-xl font-medium bg-error shadow-[0px_0px_20px] shadow-error rounded-[500px]'><Image src={play_icon} width={16}/></button>
+                            <button className='p-5 text-xl font-medium active:bg-[#ec7c60b2] bg-error shadow-[0px_0px_20px] shadow-error rounded-[500px]'><Image src={play_icon} width={16}/></button>
                             <p className='text-secondary text-xl'>Play Demo</p>
                         </div>
                     </div>

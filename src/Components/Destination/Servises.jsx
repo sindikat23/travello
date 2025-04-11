@@ -13,7 +13,7 @@ const Servises = () => {
         <div className='container mx-auto relative py-4'>
             <Image src={decor_plus} alt='decore' width={150} className='absolute top-0 right-0 -z-11' />
             <div className='text-center'>
-                <p className='text-secondary font-medium text-2xl capitalize'>Category</p>
+                <p className='text-secondary font-medium text-2xl uppercase'>Category</p>
                 <h1 className='text-6xl volkhov font-bold capitalize py-4'>We offer best services</h1>
                 <div className='grid grid-cols-4 py-10 gap-16'>
 
@@ -33,7 +33,7 @@ const Servises = () => {
                     <div className='group relative'>
                         <div className='flex flex-wrap justify-center px-2 py-6 gap-6 hover:shadow-[0px_0px_10px] hover:scale-105 duration-1000 rounded-4xl bg-white dark:bg-gray-950'>
                             <div className='relative'>
-                                <div className='p-7 bg-[#FFF1DA] rounded-[8px_8px_8px_25px] bottom-4 -right-6 absolute -z-1'></div>
+                                <div className='p-7 bg-[#FFF1DA] rounded-[8px_8px_8px_20px] bottom-4 -right-6 absolute -z-1'></div>
                                 <Image src={pilot} alt='service_icon' width={69} />
                             </div>
                             <div className='flex flex-wrap justify-center'>
