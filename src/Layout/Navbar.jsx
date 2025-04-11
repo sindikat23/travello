@@ -15,7 +15,7 @@ const Navbar = () => {
     <div>
       <div className='relative container mx-auto'>
         <Image src={theme == 'dark' ? decore_n : decore_l} alt='decore' width={750} className='absolute top-0 right-0 -z-10' />
-        <div className='mx-auto flex justify-between items-center py-10 w-11/12'>
+        <div className='flex justify-between items-center py-10'>
           <div className="logo dark:bg-gray-500 px-4 py-2 rounded-4xl">
             <Image src={logo} alt='travello' width={183} height={53} />
           </div>
