@@ -13,11 +13,18 @@ const Navbar = () => {
 
   const t = useTranslations()
   const {theme} = useTheme()
+  console.log(theme);
+  
 
   return (
     <div>
       <div className='relative container mx-auto'>
-        <Image src={theme == 'dark' ? decore_n : decore_l} alt='decore' width={750} className='absolute top-0 right-0 -z-10' />
+        {
+          theme == 'light' ? 
+          <Image src={decore_l} alt='decore' width={750} height={750} className='absolute top-0 right-0 -z-10' /> : 
+          <Image src={decore_n} alt='decore' width={750} height={750} className='absolute top-0 right-0 -z-10' />
+        }
+        {/* <Image src={theme == 'dark' ? decore_n : decore_l} alt='decore' width={750} className='absolute top-0 right-0 -z-10' /> */}
         <div className='flex justify-between items-center py-10'>
           <div className="logo dark:bg-gray-500 px-4 py-2 rounded-4xl">
             <Image src={logo} alt='travello' width={183} height={53} />

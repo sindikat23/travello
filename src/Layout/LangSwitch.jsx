@@ -1,8 +1,11 @@
 'use client'
 import React from 'react'
 import { redirect, usePathname } from '@/i18n/navigation'
+import { useLocale } from 'next-intl'
 
 const LangSwitch = () => {
+
+    const locale = useLocale()
     
     const path = usePathname()
 
@@ -13,7 +16,7 @@ const LangSwitch = () => {
 
     return (
         <div>
-            <select className='outline-0' onChange={switchHandle}>
+            <select className='outline-0' onChange={switchHandle} value={locale}>
                 <option value="uz" className='text-secondary dark:bg-white '>UZ</option>
                 <option value="en" className='text-secondary dark:bg-white '>EN</option>
             </select>

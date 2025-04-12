@@ -5,7 +5,7 @@ import React from "react"
 
 const DarkModeSwith = () => {
     const { theme, setTheme } = useTheme()
-    // console.log(theme);
+    console.log(theme);
 
 
     return (
