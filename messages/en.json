@@ -1,3 +1,31 @@
 {
-    
+    "Desitnations":"Desitnations",
+    "Hotels":"Hotels",
+    "Flights":"Flights",
+    "Bookings":"Bookings",
+
+
+    "text_main_best":"Best Destinations around the world",
+    "text_main_travel":"Travel, enjoy and live a new and full life",
+    "text_main_build":"Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
+    "main_btn_find":"Find out more",
+    "main_btn_plat":"Play Demo",
+
+    "category":"Category",
+    "service":"We Offer Best Services",
+    "calculated":"Calculated Weather",
+    "calculated_text":"Built Wicket longer admire do barton vanity itself do in it.",
+    "fly":"Best Flights",
+    "fly_text":"Engrossed listening. Park gate sell they west hard for the.",
+    "customization":"Customization",
+    "customization_text":"We deliver outsourced aviation services for military customers.",
+    "local":"Local Events",
+    "local_text":"Barton vanity itself do in it. Preferd to men it engrossed listening.",
+
+    "top":"Top Selling",
+    "top_title":"Top Destinations",
+    "rim":"Rome, Italty",
+    "london":"London, UK",
+    "euro":"Full Europe",
+    "day":"Days Trip"
 }

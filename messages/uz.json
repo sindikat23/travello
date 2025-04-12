@@ -1,3 +1,31 @@
 {
+    "Desitnations":"Manzillar",
+    "Hotels":"Mehmonxonalar",
+    "Flights":"Parvozlar",
+    "Bookings":"Bandlovlar",
+
+    "text_main_best":"Dunyo bo'ylab eng yaxshi yo'nalishlar",
+    "text_main_travel":"Sayohat qiling, zavqlaning va yangi va to'liq hayot kechiring",
+    "text_main_build":"O'rnatilgan Wicket uzoq vaqt hayratda, barton vanityning o'zi unda qiladi. Sportchilarga afzallik beriladi, bu tinglashni hayratda qoldirdi. Park darvozasi ular uchun g'arbiy qattiq sotish.",
+    "main_btn_find":"Batafsil ma'lumot",
+    "main_btn_plat":"Demo Oʻynash",
+
     
+    "category":"Kategoriya",
+    "service":"Biz eng yaxshi xizmatlarni taklif qilamiz",
+    "calculated":"Ob-havo malumotlari",
+    "calculated_text":"Barton o‘zi uchun qurdi, Wicket esa qoyil qoldi.",
+    "fly":"Eng yaxshi parvozlar",
+    "fly_text":"Savdo – g‘arbiy darvoza oldida, tinglovchilar – to‘liq e’tibor bilan.",
+    "customization":"Moslashtirish",
+    "customization_text":"Biz harbiy mijozlar uchun autsorsing aviatsiya xizmatlarini taqdim etamiz.",
+    "local":"Mahalliy voqealar",
+    "local_text":"Qiziqish bilan bajarilgan ish — e’tibor bilan tinglangan natija.",
+
+    "top":"Eng ko'p sotilgan",
+    "top_title":"Eng yaxshi manzillar",
+    "rim":"Rim, Italiya",
+    "london":"London, Buyuk Britaniya",
+    "euro":"To'liq Evropa",
+    "day":"Kunlik sayohat"
 }

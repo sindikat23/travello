@@ -2,7 +2,7 @@ import { Geist, Geist_Mono, Volkhov } from "next/font/google";
 import "./globals.css";
 import Layout from "@/Layout/Layout";
 import { Poppins } from 'next/font/google'
-import { NextIntlClientProvider , hasLocale } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 const popins = Poppins({
   display: 'block',
   weight: ['100', '200', '400', '500', '600', '700',],
@@ -31,17 +31,19 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params }) {
-  const param = await params
-  console.log(param);
+  const { locale } = await params
+  // console.log(locale);
 
   return (
-    <html lang="" className={`${popins.variable} ${volkhov.variable}`}>
+    <html lang={locale} className={`${popins.variable} ${volkhov.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} popins antialiased bg-white dark:bg-gray-950 text-black dark:text-white`}
       >
-        <Layout>
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        </Layout>
+        <NextIntlClientProvider>
+          <Layout>
+            {children}
+          </Layout>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

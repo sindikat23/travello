@@ -6,9 +6,12 @@ import logo from "@/assets/logo/logo.png";
 import decore_l from '@/assets/logo/decore_light.png'
 import decore_n from '@/assets/logo/decore_night.png'
 import { useTheme } from 'next-themes';
+import LangSwitch from './LangSwitch';
+import { useTranslations } from 'next-intl';
 
 const Navbar = () => {
 
+  const t = useTranslations()
   const {theme} = useTheme()
 
   return (
@@ -21,14 +24,20 @@ const Navbar = () => {
           </div>
           <div className="links">
             <ul className='flex items-center gap-10 font-bold'>
-              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>Desitnations</li>
-              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>Hotels</li>
-              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>Flights</li>
-              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>Bookings</li>
+              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>{t("Desitnations")}</li>
+              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>{t("Hotels")}</li>
+              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>{t("Flights")}</li>
+              <li className='hover:border-gray-700 hover:border-[0px_0px_1px_0px] cursor-pointer'>{t("Bookings")}</li>
             </ul>
           </div>
-          <div className="layouts">
+          <div className="layouts flex justify-evenly items-center gap-10 px-4">
             <DarkModeSwith />
+            <LangSwitch/>
+            <button>Login</button>
+            {/* <select className='outline-0'>
+              <option value="uz" className='text-secondary dark:bg-white '>UZ</option>
+              <option value="uz" className='text-secondary dark:bg-white '>EN</option>
+            </select> */}
           </div>
         </div>
       </div>

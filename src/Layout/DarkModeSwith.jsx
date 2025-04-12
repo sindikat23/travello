@@ -1,10 +1,11 @@
 'use client'
+import { MoonFilled, SunFilled } from "@ant-design/icons"
 import { useTheme } from "next-themes"
 import React from "react"
 
 const DarkModeSwith = () => {
     const { theme, setTheme } = useTheme()
-    console.log(theme);
+    // console.log(theme);
 
 
     return (
@@ -16,7 +17,7 @@ const DarkModeSwith = () => {
                 else{
                     setTheme("dark")
                 }                
-            }} className="font-bold">{theme =='light' ? "TUN":"KUN" }</button>
+            }} className="font-bold">{theme =='light' ? <MoonFilled  className="text-xl"/>:<SunFilled className="text-xl"/> }</button>
         </div>
     )
 }

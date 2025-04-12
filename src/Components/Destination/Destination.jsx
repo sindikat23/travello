@@ -5,62 +5,64 @@ import rim from '@/assets/images/rim.png'
 import europa from '@/assets/images/europa.png'
 import navigation from '@/assets/icons/Navigation.png'
 import slim from '@/assets/logo/slim.png'
+import { useTranslations } from 'next-intl'
 
 
 
 const Destination = () => {
+    const t =useTranslations()
     return (
         <div>
             <div className='container mx-auto py-4 px-18'>
                 <div className='text-center'>
-                    <p className='text-secondary font-medium text-2xl uppercase'>Top Selling</p>
-                    <h1 className='text-6xl volkhov font-bold capitalize py-4'>Top Destinations</h1>
+                    <p className='text-secondary font-medium text-2xl uppercase'>{t("top")}</p>
+                    <h1 className='text-6xl volkhov font-bold capitalize py-4'>{t("top_title")}</h1>
                     <div className='grid grid-cols-3 py-10 gap-16 '>
 
                         <div className='col-span-1 bg-white dark:bg-[#59737ebd] rounded-2xl pb-6 shadow-gray-500 shadow-lg hover:scale-105 duration-700'>
                             <div className='w-full h-95 rounded-[20px_20px_0px_0px] overflow-hidden'>
-                                <Image src={rim} width={500} height={700} />
+                                <Image src={rim} alt='rim_picture' width={500} height={700} />
                             </div>
                             <div className='flex justify-between items-center p-4'>
-                                <p>Rome, Italty</p>
+                                <p>{t("rim")}</p>
                                 <p>$5,42k</p>
                             </div>
                             <div className='px-4 flex items-center gap-6'>
-                                <Image src={navigation} />
-                                <p>10 Days Trip</p>
+                                <Image src={navigation} alt='navigation' />
+                                <p>10 {t("day")}</p>
                             </div>
                         </div>
 
                         <div className='col-span-1 bg-white dark:bg-[#59737ebd] rounded-2xl pb-6 shadow-gray-500 shadow-lg hover:scale-105 duration-700'>
                             <div className='w-full h-95 rounded-[20px_20px_0px_0px] overflow-hidden'>
-                                <Image src={london} height={900} />
+                                <Image src={london} height={900} alt='london' />
                             </div>
                             <div className='flex justify-between items-center p-4'>
-                                <p>London, UK</p>
+                                <p>{t("london")}</p>
                                 <p>$4.2k</p>
                             </div>
                             <div className='px-4 flex items-center gap-6'>
-                                <Image src={navigation} />
-                                <p>12 Days Trip</p>
+                                <Image src={navigation} alt='navigation' />
+                                <p>12 {t("day")}</p>
                             </div>
                         </div>
 
                         <div className='relative'>
                             <div className='col-span-1 bg-white dark:bg-[#59737ebd] rounded-2xl pb-6 shadow-gray-500 shadow-lg hover:scale-105 duration-700'>
                                 <div className='w-full h-95 rounded-[20px_20px_0px_0px] overflow-hidden'>
-                                    <Image src={europa} width={500} height={700} className='object-cover' />
+                                    <Image src={rim} width={500} height={700} alt='rim' />
                                 </div>
                                 <div className='flex justify-between items-center p-4'>
-                                    <p>Full Europe</p>
+                                    <p>{t("euro")}</p>
                                     <p>$15k</p>
                                 </div>
                                 <div className='px-4 flex items-center gap-6'>
-                                    <Image src={navigation} />
-                                    <p>28 Days Trip</p>
+                                    <Image src={navigation} alt='navigation' />
+                                    <p>28 {t("day")}</p>
                                 </div>
                             </div>
-                            <div className='absolute top-20 -right-22 -z-10'>
-                                <Image src={slim}/>
+                            <div className='absolute top-10 -right-22 -z-100'>
+                                <Image src={slim} alt="decore" />
                             </div>
                         </div>
 
