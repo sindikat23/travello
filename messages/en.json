@@ -27,5 +27,33 @@
     "rim":"Rome, Italty",
     "london":"London, UK",
     "euro":"Full Europe",
-    "day":"Days Trip"
+    "day":"Days Trip",
+
+    "fast":"Easy and Fast",
+    "fast_book":"Book your next trip in 3 easy steps.",
+    "fast_chose":"Choose Destination",
+    "fast_make":"Make Payment",
+    "fast_reach":"Reach Airport on Selected Date",
+    "fast_trip":"Trip To Greece",
+    "fast_data":"June | by Robbin Joseph",
+    "fast_people":"people going",
+    
+    
+    "sub_text":"Subscribe to get information, latest news and other interesting offer's about Jadoo.",
+    "sub_btn":"Subscribe",
+
+    "fotter_text":"Book your trip in minute, get full Control for much longer.",
+    "f_company":"Company",
+    "f_about":"About",
+    "f_careers":"Karyera",
+    "f_mobile": "Mobil",
+    "f_contact": "Contact",
+    "f_help": "Help/FAQ",
+    "f_press": "Press",
+    "f_affilates": "Affilates",
+    "f_more": "More",
+    "f_airlinefees": "Airlinefees",
+    "f_airline": "Airline",
+    "f_low": "Low fare tips",
+    "f_dis":"Discover our app"
 }
