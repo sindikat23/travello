@@ -1,13 +1,19 @@
 import { Geist, Geist_Mono, Volkhov } from "next/font/google";
 import "./globals.css";
 import Layout from "@/Layout/Layout";
-import { Poppins } from 'next/font/google'
+import { Poppins, Open_Sans } from 'next/font/google'
 import { NextIntlClientProvider } from "next-intl";
 const popins = Poppins({
   display: 'block',
   weight: ['100', '200', '400', '500', '600', '700',],
   subsets: ['latin'],
   variable: "--font-popins",
+})
+const openSans = Open_Sans({
+  display: 'block',
+  weight: ['300','400','500','700','600'],
+  subsets: ['latin'],
+  variable: "--font-opensans",
 })
 const volkhov = Volkhov({
   display: 'block',
@@ -35,7 +41,7 @@ export default async function RootLayout({ children, params }) {
   // console.log(locale);
 
   return (
-    <html lang={locale} className={`${popins.variable} ${volkhov.variable}`}>
+    <html lang={locale} className={`${popins.variable} ${volkhov.variable} ${openSans.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} popins antialiased bg-white dark:bg-gray-950 text-black dark:text-white`}
       >

@@ -13,6 +13,9 @@
 .volkhov {
   font-family: var(--font-volkhov);
 }
+.openSans {
+  font-family: var(--font-opensans);
+}
 @layer base {
   body{
     @apply bg-[#edf6f9] dark:bg-[#0a0a0a] text-black dark:text-white

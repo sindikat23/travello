@@ -4,10 +4,11 @@ import Image from 'next/image'
 import sub_decor from '@/assets/icons/sub-decor.png'
 import vector from '@/assets/icons/vector.png'
 import sub_decor2 from '@/assets/icons/sub-decor2.png'
+import decor_plus from '@/assets/logo/decor-plus.png'
 
 const Subscribe = () => {
   return (
-    <div className='container mx-auto flex items-center justify-center py-10'>
+    <div className='container mx-auto flex items-center justify-center py-20'>
         <div className='w-10/12 bg-[#dfd7f9bb] dark:bg-[#dfd7f959]  flex flex-col items-center justify-center py-25 rounded-[80px_10px_10px_10px] relative'>
             <h1 className='text-4xl font-semibold leading-10 px-16 py-6 text-center'>Subscribe to get information, latest news and other
             interesting offers about Jadoo</h1>
@@ -15,7 +16,7 @@ const Subscribe = () => {
                 <label htmlFor="">
                     <input type="email" className='px-2 py-2.5 w-100 rounded-lg outline-0 bg-white text-black' placeholder='Your email'/>
                 </label>
-                <button className='bg-error rounded-lg px-3 py-2.5'>
+                <button className='bg-error rounded-lg px-3 py-2.5 active:bg-[#df6951b2] text-white openSans font-semibold'>
                     Subscribe
                 </button>
             </div>
@@ -28,6 +29,9 @@ const Subscribe = () => {
             <div className='absolute overflow-hidden flex items-center justify-center -top-4 -right-4 z-10 p-5 rounded-[50%] bg-[#5E3BE1]'>
                 {/* <SendOutlined className='text-3xl text-white ' /> */}
                 <Image src={vector} width={30}/>
+            </div>
+            <div className='absolute -bottom-20 -right-28 -z-10'>
+                <Image src={decor_plus} alt='decor' width={200}/>
             </div>
         </div>
     </div>

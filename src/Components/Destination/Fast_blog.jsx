@@ -20,7 +20,7 @@ const Fast_blog = () => {
                         <h1 className='text-5xl text-[#14183E] volkhov capitalize py-2'>Book your next trip in 3 easy steps</h1>
                         <div className="flex items-center gap-4 py-5">
                             <div className='p-4 rounded-xl bg-[#F0BB1F]'>
-                                <Image src={fast1} alt='icon' width={36} />
+                                <Image src={fast1} alt='icon' width={40} />
                             </div>
                             <div>
                                 <h1 className='text-xl font-bold leading-[125%]'>Choose Destination</h1>
@@ -30,7 +30,7 @@ const Fast_blog = () => {
                         </div>
                         <div className="flex items-center gap-4 py-5">
                             <div className='p-4 rounded-xl bg-error'>
-                                <Image src={fast2} alt='icon' width={36} />
+                                <Image src={fast2} alt='icon' width={40} />
                             </div>
                             <div>
                                 <h1 className='text-xl font-bold leading-[125%]'>Make Payment</h1>
@@ -40,7 +40,7 @@ const Fast_blog = () => {
                         </div>
                         <div className="flex items-center gap-4 py-5">
                             <div className='p-4 rounded-xl bg-[#006380]'>
-                                <Image src={fast3} alt='icon' width={36} />
+                                <Image src={fast3} alt='icon' width={40} />
                             </div>
                             <div>
                                 <h1 className='text-xl font-bold leading-[125%]'>Reach Airport on Selected Date</h1>
@@ -49,13 +49,13 @@ const Fast_blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-1/2 flex justify-center items-center p-1 '>
+                    <div className='w-1/2 flex justify-center items-center p-1'>
                         <div className='rounded-2xl shadow-2xl px-3 py-4 bg-white dark:bg-gray-950 relative'>
                         <div className='absolute p-30 shadow-[0px_0px_180px] bg-[#2da5f063] shadow-[#14a5ff] top-0 right-0 -z-20 rounded-[100%]'></div>
-                            <div className='overflow-hidden rounded-2xl'>
+                            <div className='overflow-hidden rounded-2xl hover:scale-110 duration-1000'>
                                 <Image src={girl_trav} alt='girl-image' className='w-full' />
                             </div>
-                            <div>
+                            <div className='py-4'>
                                 <h1 className='text-2xl font-medium leading-[125%] tracking-wider py-2'>Trip To Greece</h1>
                                 <p className='text-lg font-extralight text-[#84829A] leading-[125%] pb-2'>14-29 June | by Robbin joseph</p>
                             </div>
